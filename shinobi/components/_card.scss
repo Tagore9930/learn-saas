@@ -1,0 +1,27 @@
+@use 'sass:math';
+
+.card {
+  display: block;
+  padding: $base-padding;
+  border: $base-border-thickness solid #ddd;
+  box-shadow: $base-box-shadow;
+  border-radius: math.div($base-border-radius, 4);
+
+  .card-title {
+    font-size: $base-font-size;
+    padding-bottom: $base-padding;
+    font-weight: bold;
+  }
+  .card-body {
+    font-size: $base-font-size;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+// @debug "Hello World!";
+// @debug math.min(20px, 2px, 5px);
+// @debug math.max(50px, 5px, 15px);
+// @debug math.round(25.7px);
