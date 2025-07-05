@@ -26,7 +26,7 @@
 
     // @debug $key, $val;
 
-    @if($key !="white" and $key !="black" and $key !="gray") {
+    @if($key !="white" and $key !="black") {
         @for $i from 1 through 9 {
             // @debug $key, $i;
 
