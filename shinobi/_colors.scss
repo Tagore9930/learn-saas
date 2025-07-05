@@ -13,34 +13,34 @@
             color: $val;
         }
     }
-    
+
     .bg-#{$key} {
         background-color: $val;
     }
-    
+
     .bg-hover-#{$key} {
         &:hover {
             color: $val;
         }
     }
-    
-    @debug $key, $val;
-    
-    @if($key != "white" and $key != "black" and $key != "gray") {
+
+    // @debug $key, $val;
+
+    @if($key !="white" and $key !="black" and $key !="gray") {
         @for $i from 1 through 9 {
             // @debug $key, $i;
-            
+
             /** Light variations */
             .text-#{$key}-light-#{$i} {
                 color: color.mix(white, $val, $i * 10%);
             }
-            
+
             .text-hover-#{$key}-light-#{$i} {
                 &:hover {
                     color: color.mix(white, $val, $i * 10%);
                 }
             }
-            
+
             .bg-#{$key}-light-#{$i} {
                 background-color: color.mix(white, $val, $i * 10%);
             }
@@ -50,9 +50,9 @@
                     color: color.mix(white, $val, $i * 10%);
                 }
             }
-            
+
             /** Dark variations */
-            
+
             .text-#{$key}-dark-#{$i} {
                 color: color.mix(black, $val, $i * 10%);
             }
@@ -62,21 +62,25 @@
                     color: color.mix(black, $val, $i * 10%);
                 }
             }
-            
+
             .bg-#{$key}-dark-#{$i} {
                 background-color: color.mix(black, $val, $i * 10%);
             }
-            
+
             .bg-hover-#{$key}-dark-#{$i} {
                 &:hover {
                     color: color.mix(black, $val, $i * 10%);
                 }
             }
         }
-    } @else if($key == "gray") {
-        @debug "I am else Iffffffff" $key;
-    } @else {
-        @debug "my elseeeeeeee" $key;
+    }
+
+    @else if($key =="gray") {
+        @debug "I am else Iffffffff"$key;
+    }
+
+    @else {
+        @debug "my elseeeeeeee"$key;
     }
 }
 
