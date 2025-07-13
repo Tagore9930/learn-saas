@@ -4824,8 +4824,312 @@ img {
   background-color: white;
 }
 
+.badge {
+  background-color: #f6c31c;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-primary {
+  background-color: #326dee;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-secondary {
+  background-color: #1ac888;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-error {
+  background-color: #d32752;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-info {
+  background-color: #f6c31c;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-blue {
+  background-color: #1919e6;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-red {
+  background-color: #e61919;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-yellow {
+  background-color: #e6e619;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-green {
+  background-color: #19e635;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-orange {
+  background-color: #ffa600;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-purple {
+  background-color: #9900ff;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-gray {
+  background-color: #808080;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-black {
+  background-color: black;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-white {
+  background-color: white;
+  border-radius: 80px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
 /** Utilities (margin, padding, opacity) */
 /** Generate Utilities */
+.w-auto {
+  width: auto;
+}
+
+.w-hover-auto:hover {
+  width: auto;
+}
+
+.w-0 {
+  width: 0;
+}
+
+.w-hover-0:hover {
+  width: 0;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-hover-25:hover {
+  width: 25%;
+}
+
+.w-33 {
+  width: 33.3333%;
+}
+
+.w-hover-33:hover {
+  width: 33.3333%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-hover-50:hover {
+  width: 50%;
+}
+
+.w-66 {
+  width: 66.6667%;
+}
+
+.w-hover-66:hover {
+  width: 66.6667%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-hover-75:hover {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-hover-100:hover {
+  width: 100%;
+}
+
+.w-vw-100 {
+  width: 100vw;
+}
+
+.w-hover-vw-100:hover {
+  width: 100vw;
+}
+
+.w-min {
+  width: min-content;
+}
+
+.w-hover-min:hover {
+  width: min-content;
+}
+
+.w-max {
+  width: max-content;
+}
+
+.w-hover-max:hover {
+  width: max-content;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.w-hover-fit:hover {
+  width: fit-content;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-hover-auto:hover {
+  height: auto;
+}
+
+.h-0 {
+  height: 0;
+}
+
+.h-hover-0:hover {
+  height: 0;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.h-hover-25:hover {
+  height: 25%;
+}
+
+.h-33 {
+  height: 33.3333%;
+}
+
+.h-hover-33:hover {
+  height: 33.3333%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-hover-50:hover {
+  height: 50%;
+}
+
+.h-66 {
+  height: 66.6667%;
+}
+
+.h-hover-66:hover {
+  height: 66.6667%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-hover-75:hover {
+  height: 75%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-hover-100:hover {
+  height: 100%;
+}
+
+.h-vh-100 {
+  height: 100vh;
+}
+
+.h-hover-vh-100:hover {
+  height: 100vh;
+}
+
+.h-min {
+  height: min-content;
+}
+
+.h-hover-min:hover {
+  height: min-content;
+}
+
+.h-max {
+  height: max-content;
+}
+
+.h-hover-max:hover {
+  height: max-content;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.h-hover-fit:hover {
+  height: fit-content;
+}
+
 .p-0 {
   padding: 0;
 }
