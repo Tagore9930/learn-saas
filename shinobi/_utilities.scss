@@ -107,15 +107,92 @@ $utilities: (
   "display": ("prefix": "display",
     "values": ("n": none,
       "b": block,
-      "f": flex,
       "i": inline,
-      "i-b": inline-block)),
+      "i-b": inline-block,
+      "f": flex,
+      "inline-f": inline-flex,
+      "g": grid,
+      "inline-g": inline-grid,
+      "none": none,
+    )),
+
   "font-size": ("prefix": "font",
     "values": ("sm": $font-size-sm,
       "md": $base-font-size,
       "lg": $font-size-lg,
       "xl": $font-size-xl,
-      "xxl": $font-size-xxl ))
+      "xxl": $font-size-xxl )),
+  "font-weight": ("prefix": "fw",
+    "values": ("100": 100,
+      "200": 200,
+      "300": 300,
+      "400": 400, // normal
+      "500": 500,
+      "600": 600,
+      "700": 700, // bold
+      "800": 800,
+      "900": 900,
+      "normal": normal,
+      "bold": bold,
+      "bolder": bolder,
+      "lighter": lighter)),
+  "text-align": ("prefix": "ta",
+    "values": ("left": left,
+      "center": center,
+      "right": right,
+      "justify": justify,
+      "start": start,
+      "end": end)),
+
+  "text-transform": ("prefix": "tt",
+    "values": ("capitalize": capitalize,
+      "uppercase": uppercase,
+      "lowercase": lowercase,
+      "none": none)),
+
+  "position": ("prefix": "pos",
+    "values": ("static": static,
+      "relative": relative,
+      "absolute": absolute,
+      "fixed": fixed,
+      "sticky": sticky)),
+
+  "overflow": ("prefix": "ov",
+    "values": ("visible": visible,
+      "hidden": hidden,
+      "scroll": scroll,
+      "auto": auto)),
+
+  "text-decoration": ("prefix": "td",
+    "values": ("none": none,
+      "underline": underline,
+      "overline": overline,
+      "line-through": line-through)),
+
+  "white-space": ("prefix": "ws",
+    "values": ("normal": normal,
+      "nowrap": nowrap,
+      "pre": pre,
+      "pre-line": pre-line,
+      "pre-wrap": pre-wrap)),
+
+  "font-style": ("prefix": "fst",
+    "values": ("normal": normal,
+      "italic": italic,
+      "oblique": oblique)),
+
+  "visibility": ("prefix": "vis",
+    "values": ("visible": visible,
+      "hidden": hidden,
+      "collapse": collapse)),
+
+  "vertical-align": ("prefix": "va",
+    "values": ("baseline": baseline,
+      "top": top,
+      "middle": middle,
+      "bottom": bottom,
+      "text-top": text-top,
+      "text-bottom": text-bottom))
 );
 
 /** Generate Utilities */
@@ -131,10 +208,18 @@ $utilities: (
       .#{$prefix} {
         #{$property}: $val;
       }
+
+      .#{$prefix}-hover:hover {
+        #{$property}: $val;
+      }
     }
 
     @else {
       .#{$prefix}-#{$key} {
+        #{$property}: $val;
+      }
+
+      .#{$prefix}-hover-#{$key}:hover {
         #{$property}: $val;
       }
     }

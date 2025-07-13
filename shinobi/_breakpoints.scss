@@ -8,6 +8,20 @@ $breakpoints: (
     "xl": 1200px,
 );
 
+// @each $key, $val in $breakpoints {
+//     @mixin #{"" + $key} {
+//         @media (min-width: $val) {
+//             @content;
+//         }
+//     }
+// }
+
+@mixin xs {
+    @media (min-width: map.get($breakpoints, "xs")) {
+        @content;
+    }
+}
+
 @mixin xs {
     @media (min-width: map.get($breakpoints, "xs")) {
         @content;
@@ -46,26 +60,26 @@ $breakpoints: (
 
 .responsive-test {
     @include xs {
-        color: red;
+        color: #FF6B6B;
     }
 
     @include sm {
-        color: blue;
+        color: #FFA94D;
     }
 
     @include md {
-        color: green;
+        color: #FFD43B;
     }
 
     @include lg {
-        color: purple;
+        color: #69DB7C;
     }
 
     @include xl {
-        color: orange;
+        color: #4DABF7;
     }
 
     @include breakpoint(1400px) {
-        color: pink;
+        color: #B197FC;
     }
 }

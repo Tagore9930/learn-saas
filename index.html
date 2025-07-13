@@ -1,156 +1,213 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Shinobi CSS Demo</title>
     <link rel="stylesheet" href="/css/index.css" />
 </head>
 
 <body>
-    <h1><a href="#">Hello, ninjas!</a></h1>
-
-    <h1>This is an h1</h1>
-    <a href="#">This is an anchor tag</a>
-    <p class="error">This is a error</p>
-    <p class="notification">This is a notification</p>
-    <button>click me</button>
-
+    <!-- Navbar Section -->
     <nav class="navbar-primary text-white mb-4">
         <div class="container">
-            <h2 class="site-title">Shinobi CSS</h2>
-            <p>A lightweight CSS library for dev ninjas.</p>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <h2 class="site-title">Shinobi CSS</h2>
+                </div>
+                <div class="col-12 col-sm-6 ta-end">
+                    <p>A lightweight utility-first CSS framework built with Sass</p>
+                </div>
+            </div>
         </div>
     </nav>
 
     <div class="container">
-        <!-- colors -->
-<h2>Colors</h2>
-<span class="text-primary">primary text</span> |
-<span class="text-secondary">secondary text</span> |
-<span class="text-error">error text</span> |
-<span class="text-info">info text</span> |
-<span class="text-blue">blue text</span> |
-<span class="text-red">red text</span> |
-<span class="text-green">green text</span> |
-<span class="text-yellow">yellow text</span> |
-<span class="text-purple">purple text</span> |
-<span class="text-orange">orange text</span> |
-<span class="text-gray">gray text</span>
 
-<br /><br />
+        <section class="mb-5 text-center">
+            <h1 class="font-xxl mb-2">Welcome to Shinobi CSS</h1>
+            <p class="font-md text-gray mb-3">
+                Explore a modern utility-first CSS framework built for speed and flexibility.
+            </p>
+            <a href="homepage.html" class="btn-primary text-white p-1 br-lg font-md td-hover-underline">
+                Visit Homepage Demo 🚀
+            </a>
+        </section>
 
-<span class="bg-primary text-white">bg primary</span> |
-<span class="bg-secondary text-white">bg secondary</span> |
-<span class="bg-error text-white">bg error</span> |
-<span class="bg-info text-white">bg info</span> |
-<span class="bg-blue text-white">bg blue</span> |
-<span class="bg-red text-white">bg red</span> |
-<span class="bg-green text-white">bg green</span> |
-<span class="bg-yellow text-white">bg yellow</span> |
-<span class="bg-purple text-white">bg purple</span> |
-<span class="bg-orange text-white">bg orange</span> |
-<span class="bg-gray text-white">bg gray</span> |
+        <!-- Text Colors -->
+        <section class="mb-4">
+            <h2>Text Colors</h2>
+            <div class="mb-2">
+                <span class="text-primary">Primary</span> |
+                <span class="text-secondary">Secondary</span> |
+                <span class="text-error">Error</span> |
+                <span class="text-info">Info</span> |
+                <span class="text-red">Red</span> |
+                <span class="text-green">Green</span> |
+                <span class="text-blue">Blue</span> |
+                <span class="text-yellow">Yellow</span> |
+                <span class="text-purple">Purple</span> |
+                <span class="text-orange">Orange</span> |
+                <span class="text-gray">Gray</span>
+            </div>
+        </section>
 
-<br /><br />
+        <!-- Background Colors -->
+        <section class="mb-4">
+            <h2 class="mb-1">Background Colors</h2>
+            <div class="mb-2">
+                <span class="bg-primary text-white p-1 m-1 ml-0 display-i-b">Primary</span> |
+                <span class="bg-secondary text-white p-1 m-1 display-i-b">Secondary</span> |
+                <span class="bg-error text-white p-1 m-1 display-i-b">Error</span> |
+                <span class="bg-info text-white p-1 m-1 display-i-b">Info</span> |
+                <span class="bg-red text-white p-1 m-1 display-i-b">Red</span> |
+                <span class="bg-green text-white p-1 m-1 display-i-b">Green</span> |
+                <span class="bg-blue text-white p-1 m-1 display-i-b">Blue</span> |
+                <span class="bg-yellow text-white p-1 m-1 display-i-b">Yellow</span> |
+                <span class="bg-purple text-white p-1 m-1 display-i-b">Purple</span> |
+                <span class="bg-orange text-white p-1 m-1 display-i-b">Orange</span> |
+                <span class="bg-gray text-white p-1 m-1 display-i-b">Gray</span>
+            </div>
+        </section>
 
-<span class="bg-primary-dark-8 text-white">primary dark 8</span> |
-<span class="bg-primary-dark-6 text-white">primary dark 6</span> |
-<span class="bg-primary-dark-4 text-white">primary dark 4</span> |
-<span class="bg-primary-dark-2 text-white">primary dark 2</span> |
-<span class="bg-primary text-white">primary</span> |
-<span class="bg-primary-light-2 text-white">primary light 2</span> |
-<span class="bg-primary-light-4 text-white">primary light 4</span> |
-<span class="bg-primary-light-6 text-white">primary light 6</span> |
-<span class="bg-primary-light-8 text-white">primary light 8</span> |
+        <!-- Font Sizes -->
+        <section class="mb-4">
+            <h2>Font Sizes</h2>
+            <div class="font-sm">Small Text</div>
+            <div class="font-md">Medium Text</div>
+            <div class="font-lg">Large Text</div>
+            <div class="font-xl">Extra Large Text</div>
+            <div class="font-xxl">Extra extra Text</div>
+        </section>
 
-<br /><br />
+        <!-- Buttons -->
+        <section class="mb-4">
+            <h2>Buttons</h2>
+            <a class="btn m-1">Default Button</a>
+            <a class="btn-primary text-white m-1">Primary Button</a>
+            <a class="btn-secondary text-white m-1">Secondary Button</a>
+            <a class="btn-error text-white m-1">Error Button</a>
+            <a class="btn-info m-1">Info Button</a>
+            <a class="btn-outlined-purple text-purple m-1">Outlined Purple</a>
+            <a class="btn-complement-primary m-1">Complement Primary</a>
+            <a class="btn-outlined-orange text-orange text-hover-white m-1">Outlined Orange</a>
+            <a class="btn-complement-purple m-1">Complement Purple</a>
+        </section>
 
-<a href="#" class="text-primary text-hover-red">Hover me (I am red on hover)</a> <br>
-<a href="#" class="text-primary text-hover-red-light-5">Hover me (I am light red on hover)</a> <br>
-<a href="#" class="text-primary text-hover-red-dark-3">Hover me (I am dark red on hover)</a> <br>
+        <!-- Cards -->
+        <section class="mb-4">
+            <h2>Cards</h2>
+            <div class="card">
+                <h3 class="card-title">Feature Highlight</h3>
+                <p class="card-body">Use cards to present grouped content or highlight features.</p>
+            </div>
+            <div class="card mt-2">
+                <h3 class="card-title">Informational Block</h3>
+                <p class="card-body">Cards can be used for articles, alerts, and dashboard widgets.</p>
+            </div>
+            <div class="card mt-2">
+                <h3 class="card-title">Custom Styled Section</h3>
+                <p class="card-body">Style your cards with padding, border-radius, and background colors.</p>
+            </div>
+        </section>
 
-<hr class="mt-4 mb-4">
 
-<!-- font sizes -->
-<h2 class="mb-2">Font Sizes</h2>
-<div class="font-sm">this is small font</div>
-<div class="font-md">this is medium font</div>
-<div class="font-lg">this is large font</div>
-<div class="font-xl">this is extra large font</div>
-<div class="font-xxl">this is extra, extra large font</div>
+        <!-- Grid System -->
+        <section class="mb-4">
+            <h2>Grid System</h2>
+            <div class="row gap-2">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card">
+                        <h3 class="card-title">Responsive Layout</h3>
+                        <p class="card-body">Auto-adjusting columns across breakpoints</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-6 col-xl-6">
+                    <div class="card">
+                        <h3 class="card-title">Balanced Width</h3>
+                        <p class="card-body">Useful for symmetrical layouts</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-4">
+                    <div class="card">
+                        <h3 class="card-title">Mixed Columns</h3>
+                        <p class="card-body">Combining sizes for unique designs</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="card">
+                        <h3 class="card-title">Full Width Column</h3>
+                        <p class="card-body">Takes full width at all screen sizes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<hr class="mt-4 mb-4">
+        <!-- Utility Classes -->
+        <section class="mb-4">
+            <h2>Utilities</h2>
+            <div class="bg-orange-light-5 text-orange-dark-2 p-2 br-xs mb-2">
+                Light orange background, dark orange text, small border-radius
+            </div>
+            <div class="bg-secondary-light-5 text-secondary-dark-2 p-2 br-lg mb-2">
+                Light secondary background, dark secondary text, large border-radius
+            </div>
+            <div class="bg-purple text-white o-10 p-2 display-i-b m-1">Opacity 10%</div>
+            <div class="bg-purple text-white o-30 p-2 display-i-b m-1">Opacity 30%</div>
+            <div class="bg-purple text-white o-50 p-2 display-i-b m-1">Opacity 50%</div>
+            <div class="bg-purple text-white o-70 p-2 display-i-b m-1">Opacity 70%</div>
+            <div class="bg-purple text-white o-90 p-2 display-i-b m-1">Opacity 90%</div>
+        </section>
 
-<!-- buttons -->
-<h2>Buttons</h2>
-<a href="#" class="btn">default btn</a>
-<a href="#" class="btn-primary text-white">click me</a>
-<a href="#" class="btn-secondary text-white">click me</a>
-<a href="#" class="btn-error text-white">click me</a>
-<a href="#" class="btn-info">click me</a>
-<a href="#" class="btn-outlined-purple text-purple text-hover-white">click me</a>
-<a href="#" class="btn-outlined-orange text-orange text-hover-white">click me</a>
-<a href="#" class="btn-complement-purple">click me</a>
-<a href="#" class="btn-complement-primary">click me</a>
 
-<hr class="mt-4 mb-4">
+        <!-- Responsive Test Class -->
+        <section class="mb-4">
+            <h2>Responsive Test</h2>
+            <p class="text-gray m-1 ml-0">Test how elements adapt across screen sizes.</p>
+            <div class="responsive-test m-1 ml-0">This text changes color at each breakpoint.</div>
+            <div class="row gap-2">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="card text-center">
+                        <p class="p-2">Example 1</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="card text-center">
+                        <p class="p-2">Example 2</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="card text-center">
+                        <p class="p-2">Example 3</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="card text-center">
+                        <p class="p-2">Example 4</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- cards -->
-<h2>Cards</h2>
-<div class="card">
-    <h1 class="card-title">This is a title</h1>
-    <p class="card-body">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sunt, quo
-        totam aliquam praesentium ducimus tempore sapiente quia nulla optio?
-        Lorem ipsum, dolor sit amet consectetur
-        <a href="">adipisicing elit</a>. Libero laboriosam laborum
-        exercitationem autem commodi voluptas odio aliquid ut velit doloremque
-        minima, quaerat dolores, corporis consequuntur totam nam id veniam
-        maxime.
-    </p>
-</div>
-
-<hr class="mt-4 mb-4">
-
-<!-- grid system -->
-<div class="responsive-test">changing colors</div>
-
-<h2 class="mb-2">Grid System</h2>
-<div class="row justify-content-center gap-2">
-    <div class="col-xs-12 col-sm-5 col-md-6 col-xl-3">
-        <div class="card">
-            <h3 class="card-title">Hello, ninjas</h3>
-            <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </div>
     </div>
-    <div class="col-xs-12 col-sm-5 col-md-6 col-xl-3">
-        <div class="card">
-            <h3 class="card-title">Hello, ninjas</h3>
-            <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <!-- Footer Notes -->
+    <footer class="bg-primary-dark-4 text-white p-2 mt-5 br-xl text-center">
+        <div class="container">
+            <div class="mb-2">
+                <span class="fw-bold fst-italic text-yellow">Note:</span>
+                This package will continue to grow with new features and improvements.
+            </div>
+            <div class="font-md">
+                Built with ❤️ using <strong>Shinobi CSS</strong> — a lightweight utility-first framework.
+                <br />
+                <a href="https://github.com/Tagore9930/learn-saas"
+                    class="text-yellow td-hover-underline text-hover-white">
+                    View on GitHub 🚀
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="col-xs-12 col-sm-5 col-md-6 col-xl-3">
-        <div class="card">
-            <h3 class="card-title">Hello, ninjas</h3>
-            <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-    </div>
-    <div class="col-xs-12 col-sm-5 col-md-6 col-xl-3">
-        <div class="card">
-            <h3 class="card-title">Hello, ninjas</h3>
-            <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-    </div>
-</div>
-
-<hr class="mt-4 mb-4">
-
-<!-- utilities -->
-
-<hr class="mt-4 mb-4">
-</div>
+    </footer>
 </body>
 
-</html> -->
+</html>
